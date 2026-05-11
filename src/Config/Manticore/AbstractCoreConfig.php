@@ -44,7 +44,7 @@ abstract readonly class AbstractCoreConfig implements ConfigPart
             }
         }
 
-        $configString = implode("\n", $lines);
+        $configString = implode("\n\n", $lines);
 
         return <<<EOF
 {$this->type}
